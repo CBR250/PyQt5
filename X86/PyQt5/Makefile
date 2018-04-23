@@ -7,8 +7,9 @@ first_rule: all
 all: build
 
 build:
+	$(MAKE) -C $(CURDIR)/PACKAGE/SIP        first_rule
 	$(MAKE) -C $(CURDIR)/PACKAGE/PyQt5      first_rule
-	$(MAKE) -C $(CURDIR)/PACKAGE/SIP      first_rule
+
 
 config_rule:
 
